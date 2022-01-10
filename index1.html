@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style1.css" />
+    <title>Sales</title>
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="Logo" class="logo" />
+      <p class="welcome">Yearly Sales details</p>
+    </nav>
+    <main class="app">
+      <div class="movements">
+        <div class="movements__head">
+          <div class="movements__header name">Name</div>
+          <div class="movements__header dept">Department</div>
+          <div class="movements__header sale1">Fisrt year sales</div>
+          <div class="movements__header sale2">Second year sales</div>
+          <div class="movements__header sale2">Average</div>
+        </div>
+        <div class="movements__row__input">
+          <!-- <div class="movements__row">
+            <div class="movements__type name">${ob.name}</div>
+            <div class="movements__type dept">${ob.dept}</div>
+            <div class="movements__type sale1">${ob.sale1}₹</div>
+            <div class="movements__type sale2">${ob.sale2}₹</div>
+            <div class="movements__type sale2">${ob.average}₹</div>
+          </div> -->
+        </div>
+      </div>
+      <div class="operation employee-details">
+        <h2>Sales Details</h2>
+        <form class="form form--transfer">
+          <label class="form__label">Name</label>
+          <input type="text" class="form__input form__input--name" />
+          <label class="form__label">Department</label>
+          <select class="form__input form__input--dept">
+            <option class="form__input" value=""></option>
+            <option class="form__input" value="Dept01">Dept01</option>
+            <option class="form__input" value="Dept02">Dept02</option>
+            <option class="form__input" value="Dept03">Dept03</option>
+          </select>
+          <label class="form__label">Sales 1st year</label>
+          <input type="number" class="form__input form__input--year1" />
+          <label class="form__label">Sales 2nd year</label>
+          <input type="number" class="form__input form__input--year2" />
+          <button class="form__btn form__btn--details">&rarr;</button>
+        </form>
+
+        <div class="form form--sort">
+          <div>
+            <button class="form__btn form__btn--sortA">Sort &uarr;</button>
+          </div>
+          <div>
+            <button class="form__btn form__btn--sortD">Sort &darr;</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script1.js"></script>
+  </body>
+</html>
